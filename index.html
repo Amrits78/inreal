@@ -52,6 +52,16 @@
         .button:hover {
             background: #b8860b; /* Darker Gold */
         }
+          /* Media query for mobile devices */
+          @media (max-width: 600px) {
+            .button-container {
+                flex-direction: column; /* Stack buttons vertically */
+            }
+            .button {
+                width: calc(100% - 60px);/* Make buttons full width */
+                margin: 10px 0; /* Add vertical margin */
+            }
+        }
     </style>
 </head>
 <body>
